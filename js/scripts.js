@@ -29,6 +29,9 @@ var home = function(){
   window.open("index.html", "_self");
 };
 
+
+
+
 //Business logic
 //variable holding the students score
 var score = 0;
@@ -46,4 +49,20 @@ var tally = function(){
   else{
     document.getElementById("tally").innerHTML = score + "You have scored poorly and they need to retake the test!"
   }
-}
+};
+
+//Calculate students score
+$(document).ready(function(){
+  $(".questions").submit(function(event){
+    answerArray = ["answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7", "answer8", "answer9", "answer10"];
+    answerArray.forEach(function(ans){
+      var value = $("input:radio[name=" + ans + "]:checked").val();
+      var value1 = parseInt(value);
+      score = score + value1;
+    })
+    event.preventDefault();
+    tally();
+    $(".secondscreen").hide();
+    $(".thirdscreen").show();
+  });
+});
