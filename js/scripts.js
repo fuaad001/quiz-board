@@ -28,3 +28,22 @@ $(document).ready(function(){
 var home = function(){
   window.open("index.html", "_self");
 };
+
+//Business logic
+//variable holding the students score
+var score = 0;
+
+//Analyse student's performance
+var tally = function(){
+  if(score > 79){
+    document.getElementById("tally").innerHTML = score + "You have excellently passed!";
+  }
+
+  else if(score > 49){
+    document.getElementById("tally").innerHTML = score + "You have fairly passed!"
+  }
+
+  else{
+    document.getElementById("tally").innerHTML = score + "You have scored poorly and they need to retake the test!"
+  }
+}
