@@ -12,50 +12,47 @@
   <body>
     <div class="container">
       <div class="jumbotron">
+        <img src="images/image5.jpg">
         <h1>Eagles Computer Club Quiz Board!</h1>
       </div>
 
       <div class="firstscreen">
-        <div class="row">
-          <div class="col-md-7">
-            <img src="images/image.gif" class="img-thumbnail" width="100%">
-          </div>
+          <div class="main">
+            <p> <strong>Congratulations!</strong> for coming this far and finishing your JavaScript course. You have come so far and are almost there. Finalise your course by taking the JavaScript, CSS and HTML test to earn your certificate. All the best! </p>
 
-          <div class="col-md-5">
-            <p> <strong>Congratulations!</strong> for coming this far and finishing your JavaScript course. You have come so far and are almost there. Finalise your course by taking the JavaScript, CSS and HTML test to earn your certificate. To take the test <span id = "click">Click here</span> </p>
+            <h3 class="bg-dark" id = "click">Take Exam</h3>
 
-            <form class="card">
-              <label for="name">Name:</label>
-              <input type="text" id="name">
+            <form class="card" class="form-group">
+              <h4 class="card-title text-center mb-4 mt-1" id="title">Enter your Details</h4>
+              <hr>
+              <input type="text" class="form-control" id="name" placeholder="Student Name">
+              <br>
+              <input type="text" class="form-control" id="class" placeholder="Class">
+              <br>
+              <input type="text" class="form-control" id="admission" placeholder="Admission Number">
               <br>
 
-              <label for="class">Class:</label>
-              <input type="text" id="class">
-              <br>
-
-              <label for="admission">Admission Number:</label>
-              <input type="text" id="admission">
-              <br>
-
-              <button type="submit" id="submit">Submit</button>
-              <button type="reset">Clear</button>
+              <button type="submit" class="btn btn-primary btn-block" id="submit">Submit</button>
+              <button type="reset" class="btn btn-primary btn-block">Clear</button>
             </form>
           </div>
         </div>
-      </div>
+
 
       <div class="secondscreen">
         <div class="row">
           <div class="col-md-4">
-            <img src="https://www.seekpng.com/png/detail/523-5230720_this-icon-for-gender-neutral-user-is-an.png" class="img-thumbnail">
-            <h5>NAME:</h5>
-            <span class = "name1"></span>
+            <div class="card">
+              <img src="images/image.png" class="img-thumbnail">
+              <h5 class="card-header">NAME:</h5>
+              <span class = "name1" class="card-footer"></span>
 
-            <h5>CLASS:</h5>
-            <span class = "class1"></span>
+              <h5 class="card-header">CLASS:</h5>
+              <span class = "class1" class="card-footer"></span>
 
-            <h5>ADMISSION NUMBER:</h5>
-            <span class = "admission1"></span>
+              <h5 class="card-header">ADMISSION NUMBER:</h5>
+              <span class = "admission1" class="card-footer"></span>
+            </div>
           </div>
 
           <div class="col-md-4">
@@ -187,8 +184,8 @@
 
           <div class="col-md-4">
             <div class="row">
-              <button class = "btn-success" id = "grid">Grid View</button>
-              <button class = "btn-success" id = "list">List View</button>
+              <button class = "btn-dark" id = "grid">Grid View</button>
+              <button class = "btn-dark" id = "list">List View</button>
             </div>
             <div class="float">
               <h2>1</h2>
@@ -209,22 +206,18 @@
       <div class="thirdscreen">
         <img id = "celebration">
 
-        <h5>NAME:</h5>
-        <span class = "name1"></span>
+        <h5 class="card-header">NAME:</h5>
+        <span class = "name1" class="card-footer"></span>
 
-        <h5>CLASS:</h5>
-        <span class = "class1"></span>
+        <h5 class="card-header">CLASS:</h5>
+        <span class = "class1" class="card-footer"></span>
 
-        <h5>ADMISSION NUMBER:</h5>
-        <span class = "admission1"></span>
+        <h5 class="card-header">ADMISSION NUMBER:</h5>
+        <span class = "admission1" class="card-footer"></span>
 
         <p id = "tally"></p>
 
         <button class = "btn-basic" id = "back" onclick="home()">Go Home</button>
-      </div>
-
-      <div class="footer">
-        <p>~Success in your exams~</p>
       </div>
     </div>
   </body>
