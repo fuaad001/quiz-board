@@ -2,7 +2,7 @@
 //student identification form
 $(document).ready(function(){
   $("#click").click(function(){
-    $(".card").show();
+    $(".card").slideDown();
   });
 });
 
