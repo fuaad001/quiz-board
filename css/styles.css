@@ -1,0 +1,19 @@
+.secondscreen, .thirdscreen{
+  display: none;
+}
+
+.float{
+  float: left;
+}
+
+.card{
+  display: none;
+  text-align: justify;
+}
+
+#click{
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
+  cursor: pointer;
+}
