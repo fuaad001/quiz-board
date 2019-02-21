@@ -2,18 +2,60 @@
   display: none;
 }
 
+.firstscreen{
+  background-image: url("http://getwallpapers.com/wallpaper/full/f/b/5/1100326-download-cool-dark-backgrounds-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 5px;
+}
+
+.thirdscreen{
+  text-align: center;
+}
+
+.jumbotron{
+  display: flex;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.jumbotron img{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
 .float{
   float: left;
 }
 
 .card{
   display: none;
-  text-align: justify;
+  color: black;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 3px 3px 3px grey;
+  font-family: "cursive";
+  text-align: center;
 }
 
 #click{
-  text-decoration: underline;
-  color: blue;
   font-style: italic;
   cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px white;
+}
+
+strong{
+  color: darkgrey;
 }
