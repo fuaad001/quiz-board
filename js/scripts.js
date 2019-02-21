@@ -39,15 +39,18 @@ var score = 0;
 //Analyse student's performance
 var tally = function(){
   if(score > 79){
-    document.getElementById("tally").innerHTML = score + "You have excellently passed!";
+    document.getElementById("celebration").src = "images/image2.gif"
+    document.getElementById("tally").innerHTML = "Your score is: " + score + "%. You have excellently passed!";
   }
 
   else if(score > 49){
-    document.getElementById("tally").innerHTML = score + "You have fairly passed!"
+    document.getElementById("celebration").src = "images/image3.gif"
+    document.getElementById("tally").innerHTML = "Your score is: " + score + "%. You have fairly passed!"
   }
 
   else{
-    document.getElementById("tally").innerHTML = score + "You have scored poorly and they need to retake the test!"
+    document.getElementById("celebration").src = "images/image4.gif"
+    document.getElementById("tally").innerHTML = "Your score is: " + score + "%. You have scored poorly and they need to retake the test!"
   }
 };
 
