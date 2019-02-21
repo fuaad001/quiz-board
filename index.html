@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eagles Computer Club Quiz Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Eagles Computer Club Quiz Board!</h1>
+      </div>
+
+      <div class="firstscreen">
+        <div class="row">
+          <div class="col-md-7">
+            <img src="images/image.gif" class="img-thumbnail" width="100%">
+          </div>
+
+          <div class="col-md-5">
+            <p> <strong>Congratulations!</strong> on finishing your JavaScript course. You have come so far and are almost there. Finalise your course by taking the JavaScript, CSS and HTML test to earn your certificate. To take the test <span id = "click">Click here</span> </p>
+
+            <form class="card">
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+              <br>
+
+              <label for="class">Class:</label>
+              <input type="text" id="class">
+              <br>
+
+              <label for="admission">Admission Number:</label>
+              <input type="text" id="admission">
+              <br>
+
+              <button type="submit" id="submit">Submit</button>
+              <button type="reset">Clear</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondscreen">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://www.seekpng.com/png/detail/523-5230720_this-icon-for-gender-neutral-user-is-an.png" class="img-thumbnail">
+            <h5>NAME:</h5>
+            <span class = "name1"></span>
+
+            <h5>CLASS:</h5>
+            <span class = "class1"></span>
+
+            <h5>ADMISSION NUMBER:</h5>
+            <span class = "admission1"></span>
+          </div>
+
+          <div class="col-md-4">
+            <form class="questions">
+              <ol>
+                <li class = "question1">What does the acronym CSS stand for?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer1" value = "0">
+                    Computer Science Studies.<br>
+                    <input type="radio" name = "answer1" value = "10">
+                    Cascading Style Sheets.<br>
+                    <input type="radio" name = "answer1" value = "0">
+                    Computer Standard Styling.<br>
+                    <input type="radio" name = "answer1" value = "0">
+                    Cascading Standard Style.<br>
+                </div>
+
+                <li class = "question2">What extension is given to JavaScript files?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer2" value = "10">
+                    .js<br>
+                    <input type="radio" name = "answer2" value = "0">
+                    .jquery<br>
+                    <input type="radio" name = "answer2" value = "0">
+                    .javascript<br>
+                    <input type="radio" name = "answer2" value = "0">
+                    .html<br>
+                </div>
+
+                <li class = "question3">Which of the following cannot be used to create a variable?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer3" value = "0">
+                    let<br>
+                    <input type="radio" name = "answer3" value = "0">
+                    var<br>
+                    <input type="radio" name = "answer3" value = "0">
+                    const<br>
+                    <input type="radio" name = "answer3" value = "10">
+                    create<br>
+                </div>
+
+                <li class = "question4">Which of the following is a text (code) editor?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer4" value = "0">
+                    neutron<br>
+                    <input type="radio" name = "answer4" value = "0">
+                    proton<br>
+                    <input type="radio" name = "answer4" value = "10">
+                    atom<br>
+                    <input type="radio" name = "answer4" value = "0">
+                    code plus<br>
+                </div>
+
+                <li class = "question5">Which are the two types of variables?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer5" value = "10">
+                    Local and global<br>
+                    <input type="radio" name = "answer5" value = "0">
+                    constant and changeable<br>
+                    <input type="radio" name = "answer5" value = "0">
+                    string and number<br>
+                    <input type="radio" name = "answer5" value = "0">
+                    function and not-function<br>
+                </div>
+
+                <li class = "question6">Bootstrap is another name for jquery?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer6" value = "0">
+                    True<br>
+                    <input type="radio" name = "answer6" value = "10">
+                    False<br>
+                    <input type="radio" name = "answer6" value = "0">
+                    Maybe<br>
+                    <input type="radio" name = "answer6" value = "0">
+                    I dont know<br>
+                </div>
+
+                <li class = "question7">What language is the README file written in?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer7" value = "0">
+                    Latin<br>
+                    <input type="radio" name = "answer7" value = "0">
+                    Loren ipsum<br>
+                    <input type="radio" name = "answer7" value = "10">
+                    Markdown<br>
+                    <input type="radio" name = "answer7" value = "0">
+                    JavaScript<br>
+                </div>
+
+                <li class = "question8">What URL can be used to access the live site produced by the content stored in the repository “grant” owned by  “albert”?</p></li>
+                <div class="radio">
+                    <input type="radio" name = "answer8" value = "10">
+                    https://albert.github.io/grant<br>
+                    <input type="radio" name = "answer8" value = "0">
+                    https://albert/github.io/grant<br>
+                    <input type="radio" name = "answer8" value = "0">
+                    https://albert/github.io.grant<br>
+                    <input type="radio" name = "answer8" value = "0">
+                    https://albert.github.io.grant<br>
+                </div>
+
+                <li class = "question9">What is forking?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer9" value = "0">
+                    Eating with a fork.<br>
+                    <input type="radio" name = "answer9" value = "0">
+                    Sharing your code to a different user.<br>
+                    <input type="radio" name = "answer9" value = "10">
+                    Retrieving another person's repository.<br>
+                    <input type="radio" name = "answer9" value = "0">
+                    Downloading someone’s code.<br>
+                </div>
+
+                <li class = "question10">Can you style a web page using only HTML?</li>
+                <div class="radio">
+                    <input type="radio" name = "answer10" value = "10">
+                    True<br>
+                    <input type="radio" name = "answer10" value = "0">
+                    False<br>
+                    <input type="radio" name = "answer10" value = "0">
+                    Maybe<br>
+                    <input type="radio" name = "answer10" value = "0">
+                    Pass<br>
+                </div>
+              </ol>
+              <button type="submit" class = "btn-basic" id = "next">Submit & Get Results</button>
+            </form>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row">
+              <button class = "btn-success" id = "grid">Grid View</button>
+              <button class = "btn-success" id = "list">List View</button>
+            </div>
+            <div class="float">
+              <h2>1</h2>
+              <h2>2</h2>
+              <h2>3</h2>
+              <h2>4</h2>
+              <h2>5</h2>
+              <h2>6</h2>
+              <h2>7</h2>
+              <h2>8</h2>
+              <h2>9</h2>
+              <h2>10</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="thirdscreen">
+        <p id = "tally"></p>
+        <button class = "btn-basic" id = "back" onclick="home()">Go Home</button>
+      </div>
+
+      <div class="footer">
+        <p>~Success in your exams~</p>
+      </div>
+    </div>
+  </body>
+</html>
