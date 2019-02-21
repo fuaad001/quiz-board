@@ -23,3 +23,8 @@ $(document).ready(function(){
     event.preventDefault();
   });
 });
+
+//Open first screen
+var home = function(){
+  window.open("index.html", "_self");
+};
