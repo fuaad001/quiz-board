@@ -11,6 +11,7 @@ $(document).ready(function(){
   $(".card").submit(function(event){
     $(".secondscreen").show();
     $(".firstscreen").hide();
+    $("#footer").hide();
 
     var nameInput =$("input#name").val();
     var classInput = $("input#class").val();
@@ -29,6 +30,7 @@ var home = function(){
   window.open("index.html", "_self");
 };
 
+//Alert if questions are answered
 $(document).ready(function(){
   var remindersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   remindersArray.forEach(function(reminder){
@@ -53,7 +55,7 @@ var percent = function(){
 //Analyse student's performance
 var tally = function(){
   if(percentage > 79){
-    document.getElementById("celebration").src = "images/image2.gif";
+    document.getElementById("celebration").src = "images/image5.gif";
     document.getElementById("tally").innerHTML = "Your score is: " + percentage + "%. You have excellently passed!";
     document.getElementById("score").innerHTML = score;
   }
