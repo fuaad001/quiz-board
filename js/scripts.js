@@ -29,28 +29,45 @@ var home = function(){
   window.open("index.html", "_self");
 };
 
+$(document).ready(function(){
+  var remindersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  remindersArray.forEach(function(reminder){
+     $(".answer" + reminder).click(function(){
+       $("." + reminder).text("Answered");
+    });
+  });
+});
 
 
 
 //Business logic
 //variable holding the students score
 var score = 0;
+var percentage = 0;
+
+//calculate percentage
+var percent = function(){
+  percentage = score / 10 * 100;
+}
 
 //Analyse student's performance
 var tally = function(){
-  if(score > 79){
-    document.getElementById("celebration").src = "images/image2.gif"
-    document.getElementById("tally").innerHTML = "Your score is: " + score + "%. You have excellently passed!";
+  if(percentage > 79){
+    document.getElementById("celebration").src = "images/image2.gif";
+    document.getElementById("tally").innerHTML = "Your score is: " + percentage + "%. You have excellently passed!";
+    document.getElementById("score").innerHTML = score;
   }
 
-  else if(score > 49){
-    document.getElementById("celebration").src = "images/image3.gif"
-    document.getElementById("tally").innerHTML = "Your score is: " + score + "%. You have fairly passed!"
+  else if(percentage > 49){
+    document.getElementById("celebration").src = "images/image3.gif";
+    document.getElementById("tally").innerHTML = "Your score is: " + percentage + "%. You have fairly passed!";
+    document.getElementById("score").innerHTML = score;
   }
 
   else{
-    document.getElementById("celebration").src = "images/image4.gif"
-    document.getElementById("tally").innerHTML = "Your score is: " + score + "%. You have scored poorly and they need to retake the test!"
+    document.getElementById("celebration").src = "images/image4.gif";
+    document.getElementById("tally").innerHTML = "Your score is: " + percentage + "%. You have scored poorly and you need to retake the test!";
+    document.getElementById("score").innerHTML = score;
   }
 };
 
@@ -64,6 +81,7 @@ $(document).ready(function(){
       score = score + value1;
     })
     event.preventDefault();
+    percent();
     tally();
     $(".secondscreen").hide();
     $(".thirdscreen").show();
