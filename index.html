@@ -20,24 +20,27 @@
           <div class="main">
             <p> <strong>Congratulations!</strong> for coming this far and finishing your JavaScript course. You have come so far and are almost there. Finalise your course by taking the JavaScript, CSS and HTML test to earn your certificate. All the best! </p>
 
-            <h3 class="bg-dark" id = "click">Take Exam</h3>
+            <h3 class="bg-success" id = "click">Take Exam</h3>
 
             <form class="card" class="form-group">
               <h4 class="card-title text-center mb-4 mt-1" id="title">Enter your Details</h4>
               <hr>
-              <input type="text" class="form-control" id="name" placeholder="Student Name">
+              <input type="text" class="form-control" id="name" placeholder="Student Name" required name="name">
               <br>
-              <input type="text" class="form-control" id="class" placeholder="Class">
+              <input type="text" class="form-control" id="class" placeholder="Class" required name="class">
               <br>
-              <input type="text" class="form-control" id="admission" placeholder="Admission Number">
+              <input type="text" class="form-control" id="admission" placeholder="Admission Number" required name="admission">
               <br>
 
-              <button type="submit" class="btn btn-primary btn-block" id="submit">Submit</button>
-              <button type="reset" class="btn btn-primary btn-block">Clear</button>
+              <button type="submit" class="btn btn-success btn-block" id="submit">Submit</button>
+              <button type="reset" class="btn btn-success btn-block">Clear</button>
             </form>
           </div>
         </div>
 
+        <div class="footer modal-footer card-footer" id = "footer">
+          <p>~Success in your exams~</p>
+        </div>
 
       <div class="secondscreen">
         <div class="row">
@@ -53,9 +56,9 @@
           <div class="col-md-4">
             <form class="questions">
               <ol>
-                <li class = "question1">What does the acronym CSS stand for?</li>
+                <li class = "question1" id = "question1">What does the acronym CSS stand for?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer1" class="answer1" value = "0">
+                    <input type="radio" required name = "answer1" class="answer1" value = "0">
                     Computer Science Studies.<br>
                     <input type="radio" name = "answer1" class="answer1" value = "1">
                     Cascading Style Sheets.<br>
@@ -65,9 +68,9 @@
                     Cascading Standard Style.<br>
                 </div>
 
-                <li class = "question2">What extension is given to JavaScript files?</li>
+                <li class = "question2" id = "question2">What extension is given to JavaScript files?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer2" class="answer2" value = "1">
+                    <input type="radio" required name = "answer2" class="answer2" value = "1">
                     .js<br>
                     <input type="radio" name = "answer2" class="answer2" value = "0">
                     .jquery<br>
@@ -77,9 +80,9 @@
                     .html<br>
                 </div>
 
-                <li class = "question3">Which of the following cannot be used to create a variable?</li>
+                <li class = "question3" id = "question3">Which of the following cannot be used to create a variable?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer3" class="answer3" value = "0">
+                    <input type="radio" required name = "answer3" class="answer3" value = "0">
                     let<br>
                     <input type="radio" name = "answer3" class="answer3" value = "0">
                     var<br>
@@ -89,9 +92,9 @@
                     create<br>
                 </div>
 
-                <li class = "question4">Which of the following is a text (code) editor?</li>
+                <li class = "question4" id = "question4">Which of the following is a text (code) editor?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer4" class="answer4" value = "0">
+                    <input type="radio" required name = "answer4" class="answer4" value = "0">
                     neutron<br>
                     <input type="radio" name = "answer4" class="answer4" value = "0">
                     proton<br>
@@ -101,9 +104,9 @@
                     code plus<br>
                 </div>
 
-                <li class = "question5">Which are the two types of variables?</li>
+                <li class = "question5" id = "question5">Which are the two types of variables?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer5" class="answer5" value = "1">
+                    <input type="radio" required name = "answer5" class="answer5" value = "1">
                     Local and global<br>
                     <input type="radio" name = "answer5" class="answer5" value = "0">
                     constant and changeable<br>
@@ -113,9 +116,9 @@
                     function and not-function<br>
                 </div>
 
-                <li class = "question6">Bootstrap is another name for jquery?</li>
+                <li class = "question6" id = "question6">Bootstrap is another name for jquery?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer6" class="answer6" value = "0">
+                    <input type="radio" required name = "answer6" class="answer6" value = "0">
                     True<br>
                     <input type="radio" name = "answer6" class="answer6" value = "1">
                     False<br>
@@ -125,9 +128,9 @@
                     I dont know<br>
                 </div>
 
-                <li class = "question7">What language is the README file written in?</li>
+                <li class = "question7" id = "question7">What language is the README file written in?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer7" class="answer7" value = "0">
+                    <input type="radio" required name = "answer7" class="answer7" value = "0">
                     Latin<br>
                     <input type="radio" name = "answer7" class="answer7" value = "0">
                     Loren ipsum<br>
@@ -137,9 +140,9 @@
                     JavaScript<br>
                 </div>
 
-                <li class = "question8">What URL can be used to access the live site produced by the content stored in the repository “grant” owned by  “albert”?</p></li>
+                <li class = "question8" id = "question8">What URL can be used to access the live site produced by the content stored in the repository “grant” owned by  “albert”?</p></li>
                 <div class="radio">
-                    <input type="radio" name = "answer8" class="answer8" value = "1">
+                    <input type="radio" required name = "answer8" class="answer8" value = "1">
                     https://albert.github.io/grant<br>
                     <input type="radio" name = "answer8" class="answer8" value = "0">
                     https://albert/github.io/grant<br>
@@ -149,9 +152,9 @@
                     https://albert.github.io.grant<br>
                 </div>
 
-                <li class = "question9">What is forking?</li>
+                <li class = "question9" id = "question9">What is forking?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer9" class="answer9" value = "0">
+                    <input type="radio" required name = "answer9" class="answer9" value = "0">
                     Eating with a fork.<br>
                     <input type="radio" name = "answer9" class="answer9" value = "0">
                     Sharing your code to a different user.<br>
@@ -161,9 +164,9 @@
                     Downloading someone’s code.<br>
                 </div>
 
-                <li class = "question10">Can you style a web page using only HTML?</li>
+                <li class = "question10" id = "question10">Can you style a web page using only HTML?</li>
                 <div class="radio">
-                    <input type="radio" name = "answer10" class="answer10" value = "1">
+                    <input type="radio" required name = "answer10" class="answer10" value = "1">
                     True<br>
                     <input type="radio" name = "answer10" class="answer10" value = "0">
                     False<br>
@@ -173,51 +176,50 @@
                     Pass<br>
                 </div>
               </ol>
-              <button type="submit" class="btn btn-primary btn-block" id = "next">Submit & Get Results</button>
+              <button type="submit" class="btn btn-success btn-block" id = "next">Submit & Get Results</button>
             </form>
           </div>
 
           <div class="col-md-4" id = "response">
-            <div class="row">
-              <button class="btn btn-primary btn-block" id = "grid">Grid View</button>
-              <button class="btn btn-primary btn-block" id = "list">List View</button>
-            </div>
+            <h2 class = "responses">Check & Navigate:</h2>
             <div class="float">
-              <h2>1 <span class = "1"></span></h2>
-              <h2>2 <span class = "2"></span></h2>
-              <h2>3 <span class = "3"></span></h2>
-              <h2>4 <span class = "4"></span></h2>
-              <h2>5 <span class = "5"></span></h2>
-              <h2>6 <span class = "6"></span></h2>
-              <h2>7 <span class = "7"></span></h2>
-              <h2>8 <span class = "8"></span></h2>
-              <h2>9 <span class = "9"></span></h2>
-              <h2>10 <span class = "10"></span></h2>
+              <a href ="#question1">1. <span class = "1" id = "res"></span></a>
+              <a href ="#question2">2. <span class = "2" id = "res"></span></a>
+              <a href ="#question3">3. <span class = "3" id = "res"></span></a>
+              <a href ="#question4">4. <span class = "4" id = "res"></span></a>
+              <a href ="#question5">5. <span class = "5" id = "res"></span></a>
+              <a href ="#question6">6. <span class = "6" id = "res"></span></a>
+              <a href ="#question7">7. <span class = "7" id = "res"></span></a>
+              <a href ="#question8">8. <span class = "8" id = "res"></span></a>
+              <a href ="#question9">9. <span class = "9" id = "res"></span></a>
+              <a href ="#question10">10. <span class = "10" id = "res"></span></a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="thirdscreen">
-        <img id = "celebration">
+        <div class="box">
+          <img id = "celebration">
 
-        <div class="card card-pricing popular shadow text-center px-3 mb-4">
-           <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Scoreboard</span>
-           <div class="bg-transparent card-header pt-4 border-0">
-               <h1 class="h1 font-weight-normal text-primary text-center mb-0"><p id = "tally"></p></h1>
-               <p><span class="h6 text-muted ml-2" id="score"></span><span class="h6 text-muted ml-2"> / 10</span></p>
-           </div>
-           <div class="card-body bg-white mt-0 shadow">
-             <h5 class="card-header">Name: <span class = "name1"></span></h5>
-
-
-             <h5 class="card-header">Class: <span class = "class1"></span></h5>
+          <div class="card card-pricing popular shadow text-center px-3 mb-4">
+             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-success text-white shadow-sm">Scoreboard</span>
+             <div class="bg-transparent card-header pt-4 border-0">
+                 <h1 class="h1 font-weight-normal text-success text-center mb-0"><p id = "tally"></p></h1>
+                 <p><span class="h6 text-muted ml-2" id="score"></span><span class="h6 text-muted ml-2"> / 10</span></p>
+             </div>
+             <div class="card-body bg-white mt-0 shadow">
+               <h5 class="card-header">Name: <span class = "name1"></span></h5>
 
 
-             <h5 class="card-header">Admission Number: <span class = "admission1"></span></h5>
-           </div>
+               <h5 class="card-header">Class: <span class = "class1"></span></h5>
 
-        <button class="btn btn-primary btn-block" id = "back" onclick="home()">Go Home</button>
+
+               <h5 class="card-header">Admission Number: <span class = "admission1"></span></h5>
+             </div>
+
+          <button class="btn btn-success btn-block" id = "back" onclick="home()">Go Home</button>
+        </div>
       </div>
     </div>
   </body>
