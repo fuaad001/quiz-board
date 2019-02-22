@@ -1,23 +1,38 @@
+.row, .box{
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main p{
+  color: black;
+  margin-bottom: 50px;
+}
+
+body{
+  background-image: url("https://www.nationalonlineinsuranceschool.com/insurance-license-blog/wp-content/uploads/2012/11/Insurance-Education-Techniques.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .secondscreen, .thirdscreen{
   display: none;
   margin-bottom: 10px;
 }
 
 .firstscreen{
-  background-image: url("http://getwallpapers.com/wallpaper/full/f/b/5/1100326-download-cool-dark-backgrounds-1920x1080.jpg");
   background-repeat: no-repeat;
   background-size: cover;direction: column;
-  padding: 120px;
+  padding: 50px;
   color: white;
   text-align: center;
-  font-size: x-large;
+  font-size: large;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .thirdscreen{
   text-align: center;
-  background-color: silver;
+  background-color: ;
   padding-right: 50px;
   padding-left: 50px;
   border-radius: 5px;
@@ -30,6 +45,7 @@
   background-color: black;
   margin-bottom: 10px;
   color: white;
+  background-color: #28a745;
 }
 
 .jumbotron img{
@@ -42,6 +58,23 @@
 
 .float{
   float: left;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.float a{
+  color: black;
+  font-size: x-large;
+}
+
+.float a:hover{
+  box-shadow: 3px 3px 3px grey;
+  font-size: x-large;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
 }
 
 .card{
@@ -64,13 +97,13 @@
 }
 
 strong{
-  color: darkgrey;
+  color: #28a745;
 }
 
 .card-header{
   font-weight: bold;
   font-family: monospace;
-  color: #007bff;
+  color: #28a745;
 }
 
 .class1, .name1, .admission1{
@@ -86,6 +119,7 @@ strong{
 
 #celebration{
   vertical-align: middle;
+  width: 350px;
 }
 
 #title{
@@ -104,9 +138,59 @@ strong{
     margin-bottom: 10px;
 }
 
+#response{
+  display: none;
+}
+
+.img-thumbnail{
+  display: none;
+}
+.responses{
+  background-color: #28a745;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 320px;
+  text-align: center;
+}
+
+#res{
+  color: #28a745;
+  font-style: italic;
+  font-family: serif;
+  font-size: large;
+}
+
+#footer{
+  background-color: #28a745;
+  color: white;
+  font-size: x-large;
+}
+
+#next{
+  margin-bottom: 10px;
+}
+
 @media only screen and (min-width: 812px) {
   #response{
     position: fixed;
     right: 0;
+    display: inline;
+  }
+
+  .img-thumbnail{
+    display: inline;
+  }
+
+  .firstscreen{
+    font-size: xx-large;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .jumbotron{
+    margin-top: 10px;
   }
 }
