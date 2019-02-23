@@ -3,13 +3,14 @@
 $(document).ready(function(){
   $("#click").click(function(){
     $(".card").slideDown();
+    $(".main p").slideUp();
   });
 });
 
 //Open second screen
 $(document).ready(function(){
   $(".card").submit(function(event){
-    $(".secondscreen").show();
+    $(".secondscreen").fadeIn();
     $(".firstscreen").hide();
     $("#footer").hide();
 
