@@ -4,7 +4,7 @@
 ## Description
 This is an online test for the Eagles computer club of Moi High School, Lokomo. The quiz contains ten questions which can be used to judge the understanding of the student in the fundamental skills of javascript. Afterwards the students responses are graded and the score is computed followed by a comment explaining whether the student should retake the text or not.
 ## Dependencies
-Finish to Start
+Uncompressed, development jQuery 3.3.1
 ## BDD
 | Behavior- Our program should handle: | Input Example- When it receives: | Output Example- It should return: |
 | :-------------: | :-------------: | :-------------: |
