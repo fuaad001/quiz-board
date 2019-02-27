@@ -126,7 +126,7 @@ strong{
 
 #celebration{
   vertical-align: middle;
-  width: 300px;
+  width: 100%;
 }
 
 #title{
@@ -201,5 +201,10 @@ strong{
 
   .jumbotron{
     margin-top: 10px;
+  }
+
+  #celebration{
+    vertical-align: middle;
+    width: 350px;
   }
 }
